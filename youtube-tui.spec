@@ -1,5 +1,5 @@
 Name:           youtube-tui
-Version:        0.7.2
+Version:        %(unset https_proxy && curl -s https://api.github.com/repos/Siriusmart/youtube-tui/releases/latest | grep -oP '"tag_name": "v\K(.*)(?=")')
 Release:        1
 URL:            https://github.com/Siriusmart/youtube-tui
 Source0:        https://github.com/Siriusmart/youtube-tui/archive/refs/tags/v%{version}.tar.gz
