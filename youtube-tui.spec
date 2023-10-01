@@ -46,7 +46,7 @@ cargo build --release --locked --offline --all-features
 %install
 install -D -m755 target/release/youtube-tui %{buildroot}/usr/bin/youtube-tui
 install -D -m755 /usr/lib64/libsixel.so.* -t %{buildroot}/usr/lib64
-
+strip --strip-debug %{buildroot}/usr/bin/youtube-tui
 
 %files
 %defattr(-,root,root,-)
