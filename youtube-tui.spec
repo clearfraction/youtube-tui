@@ -40,7 +40,7 @@ meson --libdir=lib64 --prefix=/usr --buildtype=plain \
 ninja -v -C builddir
 DESTDIR=/ ninja -C builddir install
 popd
-cargo build --release --locked --offline cargo install youtube-tui --no-default-features -F 'clipboard' -F 'sixel'
+cargo build --release --locked --offline --no-default-features -F 'clipboard' -F 'sixel'
 
 
 %install
